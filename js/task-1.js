@@ -1,0 +1,30 @@
+// function slugify(title){
+//     let slug = title.toLowerCase();
+//     let result = '';
+//     for(let i = 0; i < slug.length; i++){
+//         if(slug[i] === " "){
+//             // slug[i] = "-";
+//             result += '-';
+//         } else {
+//             result += slug[i];
+//         }
+//     }
+//     return result; 
+// }
+
+
+// function slugify(title){
+//     let slug = title.split(" ");
+//     return slug.join("-").toLowerCase();
+// }
+
+
+function slugify(title){
+    return title.split(" ").join("-").toLowerCase();
+}
+
+
+console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
+console.log(slugify("English for developer")); // "english-for-developer"
+console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
